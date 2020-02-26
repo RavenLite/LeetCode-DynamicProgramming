@@ -102,10 +102,14 @@ int main(){
     
     string s = "asdfghhgfdjkkl";
     int n = (int)s.size();
-    //cout << checkPalindromicSubstringBruteForce(s,n);
+    // Brute Force  TC: O(n^3)
+    cout << checkPalindromicSubstringBruteForce(s,n);
     
-    //cout << checkPalindromicSubstringDP(s,n);
+    // Dynamic Programming TC: O(n^2) 
+    cout << checkPalindromicSubstringDP(s,n);
     
+    // Non DP in TC: O(n^2)
     cout << checkPalindromicSubstringNonDP(s, n);
+    
     cout << "\n";
 }
